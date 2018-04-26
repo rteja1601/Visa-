@@ -1,0 +1,15 @@
+<div class="header">
+ <img src="/assets/images/visalogo.jpg"  aria-label="Visa logo" alt="Visa logo" width="100" height="70">
+<div class="fields" #elRef *ngFor="let fields of fieldsArray;let i=index" >
+  <span (click)="showDiv(i)">{{fields}}</span>
+</div>
+</div>
+<div #thisElement *ngIf="openCloseAnim">
+ <div class="div-box" [@moveState]="state"><i class="fa fa-angle-up"></i></div>
+ </div>
+<div class="animate" *ngIf="openCloseAnim" [@expandCollapse] = 'openCloseAnim'>
+</div>
+<!--<div #thisElement>
+    <div class="div-box" [@moveState]="state">Click buttons to move <div>
+  </div>
+  <button (click)="moveUp()">Up</button>-->
