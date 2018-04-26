@@ -1,6 +1,6 @@
 
 
-# angular4-transition-example
+# angular4
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.7.
 
